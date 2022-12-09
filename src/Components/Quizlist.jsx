@@ -2,7 +2,8 @@ import React from 'react'
 import Quiz from './Quiz'
 import bob1 from '../assets/bob1.svg'
 import bob2 from '../assets/bob2.svg'
-// import {ThreeDots} from 'react-loader-spinner'
+import {ThreeDots} from 'react-loader-spinner'
+
 export default function Quizlist(props){
     const [quizData,setQuizData]=React.useState([])
     const [showAnswer,setShowAnswer]=React.useState(false)
@@ -88,7 +89,7 @@ function handleLoadStartPage(){
             
         :   
         <div className='loader--container'>
-          {/* <ThreeDots 
+          <ThreeDots 
             height="80" 
             width="80" 
             radius="9"
@@ -97,7 +98,7 @@ function handleLoadStartPage(){
             wrapperStyle={{}}
             wrapperClassName=""
             visible={true}
-            /> */}
+            />
         </div>
       } 
       </>  
